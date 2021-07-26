@@ -154,6 +154,9 @@ export const PaymentForm: React.FC = () => {
                             {...register(cvvCode, rules[cvvCode])}
                             placeholder="***"
                             onChange={onChangeCVV}
+                            onKeyDown={(e) => {
+                                if(e.code === "Enter") e.currentTarget.blur()
+                            }}
                             type="password"
                             disabled={disableCVV}
                         />
