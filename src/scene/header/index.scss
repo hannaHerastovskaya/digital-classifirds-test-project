@@ -1,0 +1,42 @@
+header {
+  background-color: #f9f9f9;
+  padding: 20px 50px 14.5px;
+  height: 169.5px;
+  box-sizing: border-box;
+  border-bottom: solid 1px #ebebeb;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #8e99a4;
+
+  title, .line {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  hr {
+    height: 1px;
+    border: solid 0.5px #f1f1f1;
+    background: #f1f1f1;
+    box-sizing: border-box;
+  }
+
+  .line {
+    margin-top: 14px;
+  }
+
+  .line:last-of-type {
+    margin-top: 10px;
+  }
+
+  .value {
+    font-size: 13px;
+    font-weight: bold;
+    color: #212c3a;
+  }
+}
