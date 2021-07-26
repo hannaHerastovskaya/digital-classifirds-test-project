@@ -1,0 +1,111 @@
+$inputBorder: solid 1px #ebebeb;
+$inputPadding: 13px 15px;
+$inputBorderRadius: 3px;
+
+form {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  padding: 20px 50px 30px;
+
+  #formFields {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    margin: 15px 0 25px;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .field:first-of-type {
+    margin-right: 20px;
+  }
+
+  .inputContainer {
+    box-sizing: border-box;
+    padding: $inputPadding;
+    border-radius: $inputBorderRadius;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    input {
+      flex: auto;
+    }
+  }
+
+  .validate {
+    border: $inputBorder;
+    background: inherit;
+  }
+
+  .error {
+    border: solid 1.2px #d84a65;
+    background-color: #ffeef1;
+  }
+
+  input,
+  input:active,
+  input:hover,
+  input:focus {
+    border: none;
+    background: inherit;
+    outline: 0;
+    outline-offset: 0;
+    font-size: 16px;
+  }
+
+  #shelfLife {
+    width: 110px;
+    padding: $inputPadding;
+    border-radius: $inputBorderRadius;
+    box-sizing: border-box;
+    align-items: center;
+    input {
+      width: 20px;
+    }
+    span {
+      font-size: 16px;
+      margin: 0 2px 0 -25px;
+    }
+  }
+
+  #cvvCode {
+    width: 114px;
+    input {
+      width: 55px;
+    }
+  }
+
+  label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #737a86;
+    margin-bottom: 10px;
+  }
+
+  span {
+    font-size: 11px;
+    color: #979797;
+    margin: 10px;
+  }
+
+  button[type='submit'], button[type='submit']:active {
+    width: auto;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #b52843;
+    border-radius: 3px;
+    border: 0;
+  }
+
+  button[type='submit']:hover {
+    background-color: crimson;
+  }
+
+}
