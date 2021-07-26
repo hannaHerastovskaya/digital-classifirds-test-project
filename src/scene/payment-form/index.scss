@@ -37,6 +37,10 @@ form {
     }
   }
 
+  .inputContainer:focus-within {
+    box-shadow: 0 2px 4px 0 rgba(153, 153, 153, 0.31);
+    border: solid 1px #1574eb;
+  }
   .validate {
     border: $inputBorder;
     background: inherit;
